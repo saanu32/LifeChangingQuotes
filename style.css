@@ -1,0 +1,148 @@
+
+
+body{
+    background: lavender;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 50vh;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    font-family: "dancing script", "cursive";
+    overflow: hidden;
+    color: #e9cece;
+    letter-spacing: 0.5px;
+    display: grid;
+    place-items: center;
+
+}
+
+.inner{
+    position:absolute;
+    height: 100%;
+    width: 80%;
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+
+}
+.box {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background:lavenderblush;
+    border-radius: 5px;
+    overflow: hidden;
+    color: lavender;
+    letter-spacing: 0.5px;
+    display: grid;
+    place-items: center;
+
+}
+.number::before{
+    content: " ";
+    position: absolute;
+    top: -100px;
+    right: -10px;
+    width: 90px;
+    height: 200px;
+    background: var(--secondary-color);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: -1;
+    box-shadow: 0 0 0.7rem black;
+
+}
+
+.number {
+    font-family: var(--sans);
+    position: absolute;
+    margin: 0;
+    top: 15px;
+    right: 15px;
+    color: red;
+}
+
+.number img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -25px;
+    right: -7px;
+    cursor: pointer;
+    animation: rot 1s linear;
+}
+
+.number :hover img{
+    animation: rot 1s linear;
+
+}
+@keyframes rot{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.quotes{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-size: large;
+    font-weight: 600;
+    color: #060606;
+    font-style: italic;
+}
+
+.author{
+    position: absolute;
+    top:45%;
+    left: 60%;
+    width: 85%;
+    font-size: small;
+    font-weight: 600;
+    color: #0b0b0bf1;
+    font-style: italic;  
+
+}
+
+.button{
+    position: center;
+    text-align: center;
+    margin-top: 12rem;
+    bottom:20rem;
+    left: 0%;
+    width: 50%;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 2cqmax;
+    color:black;
+    font-style: oblique; 
+    background-color:palevioletred; 
+}
+
+.start{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 85%;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 500cqmax;
+    color:black;
+    font-style: oblique;   
+}
+
